@@ -1,2 +1,4 @@
 .idea/
 sample_file.py
+config.py
+__pycache__/
