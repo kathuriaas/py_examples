@@ -20,9 +20,19 @@ def array_list(p_list):
         print("Error during list")
 
 
+def array_tuple(p_tuple):
+    try:
+        for element in p_tuple:
+            print(element)
+    except:
+        print("Error during list")
+
+
 def main():
     v_list = ['element1', 'element2', 'element3', 'element4']
     array_list(v_list)
+    v_tuple = ('element1', 'element2', 'element3', 'element4')
+    array_tuple(v_tuple)
 
 
 if __name__ == "__main__":
