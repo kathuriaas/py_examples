@@ -57,6 +57,31 @@ def array_set(p_set):
     print("Set example Ended\n")
 
 
+def array_dict(p_dict):
+    print("Dictionary example started:")
+    try:
+        print(p_dict)
+        print(p_dict['key1'])
+        print(p_dict.get('key1'))  # Same as last
+        p_dict['key4'] = 'value4_new'
+        print(p_dict)
+        for a in p_dict:
+            print(p_dict[a])
+        for b in p_dict.values():
+            print(b)
+        for c, d in p_dict.items():
+            print(c, ": ", d)
+        if 'key4' in p_dict:
+            print('Key present in dictionary')
+        if 'value1' in p_dict.values():
+            print('Value present in dictionary')
+        p_dict.pop('key3')
+        print(p_dict)
+    except:
+        print("Error during set")
+    print("Dictionary example Ended\n")
+
+
 def main():
     v_list = ['element1', 'element2', 'element3', 'element4']
     array_list(v_list)
@@ -64,6 +89,8 @@ def main():
     array_tuple(v_tuple)
     v_set = {'set_element1', 'set_element2', 'set_element3', 'set_element4'}
     array_set(v_set)
+    v_dict = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+    array_dict(v_dict)
 
 
 if __name__ == "__main__":

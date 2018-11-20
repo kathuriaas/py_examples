@@ -95,7 +95,7 @@ def main():
     res = select_data(con, select_query)
 
     drop_query = "DROP TABLE employees"
-    drop_table(con, drop_query)
+    #drop_table(con, drop_query)
 
     con.close()
 
