@@ -86,5 +86,4 @@ def main():
 
 if __name__ == "__main__":
     # calling the main function
-    # C:\My Documents\python\Temp\testfile.txt
     main()
